@@ -56,27 +56,27 @@
 //	x = y;
 //	y = temp;
 //}
-//void Swap2(int *pa, int *pb)
-//{
-//	int temp = 0;
-//    temp=*pa;//等价于temp=a
-//	*pa = *pb;
-//	*pb = temp;
-//}
-//int main()
-//{
-//	int a = 10;
-//	int b = 20;
-//	int temp = 0;
-//	printf("a=%d b=%d\n", a, b);
-//	//Swap( a , b );//a b是实参  实际传给函数的参数
-//	Swap2(&a,&b);
-//	/*temp = a;
-//	a = b;
-//	b = temp;*/
-//	printf("a=%d b=%d\n", a, b);
-//	return 0;
-//}
+void Swap2(int *pa, int *pb)
+{
+	int temp = 0;
+    temp=*pa;//等价于temp=a
+	*pa = *pb;
+	*pb = temp;
+}
+int main()
+{
+	int a = 10;
+	int b = 20;
+	int temp = 0;
+	printf("a=%d b=%d\n", a, b);
+	//Swap( a , b );//a b是实参  实际传给函数的参数
+	Swap2(&a,&b);
+	/*temp = a;
+	a = b;
+	b = temp;*/
+	printf("a=%d b=%d\n", a, b);
+	return 0;
+}
 //把实参传给形参的时候
 //形参是实参的一份临时拷贝
 //对形参的修改不会影响实参
@@ -243,15 +243,15 @@
 
 
 
-
-#include "add.h"
-int main()
-{
-	int a = 10;
-	int b = 20;
-	int sum = Add(a, b);//函数调用
-	printf("sum=%d\n", sum);
-	return 0;
-}
-
-
+//
+//#include "add.h"
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	int sum = Add(a, b);//函数调用
+//	printf("sum=%d\n", sum);
+//	return 0;
+//}
+//
+//
